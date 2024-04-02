@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #4d4d62;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+button{
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+.container-border{
+    background-color: #3b3b4f;
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container{
+    background-color: #1b1b32;
+    width: 98%;
+    margin: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    background-color: #3b3b4f;
+    padding: 4px 10px;
+}
+.title-body{
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    max-width: 170px;
+    width: 40%;
+}
+hr{
+    border: 1.5px solid #f1be32;
+}
+
+.player-container{
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    column-gap: 10px;
+    background-color: #3b3b4f;
+    padding: 10px;
+}
+.image-music{
+    background-color: #1b1b32;
+    padding: 7px;
+    max-width: 200px;
+}
+.img-albom{
+    width: 100%;
+    height: 100%;
+}
+.player-display-song-artist {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+#player-song-title{
+    font-size: 22px;
+}
+#player-song-artist{
+    font-size: 16px;
+}
+#player-song-title,
+#player-song-artist{
+    font-family: 'Roboto Mono', sans-serif;
+    text-align: center;
+}
+
+
+.play-stop-container{
+    background-color: #1b1b32;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.player-button{
+    display: inline-block;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.button-playing{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.ri-pause-fill{
+    font-weight: 800;
+}
+.ri-shuffle-line{
+    font-size: 20px;
+
+}
+.play:not(.ri-shuffle-line){
+    font-size: 32px;
+}
+.play {
+    cursor: pointer;
+}
+
+.playing{
+    color: #f1be32;
+    border: 1px solid #3b3b4f;
+    border-radius: 10%; 
+    background-color: transparent;
+    padding: 2px 2px 2px 4px;
+}
+
+.playlist-songs{
+    background-color: #3b3b4f;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.playlist-song{
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    flex-direction: column;
+}
+.playlist-button {
+    display: flex;
+    justify-content: space-between;
+}
+.playlist-song:not(:last-of-type){
+    border-bottom: 1px solid #1b1b32;
+}
+.playlist-song:hover{
+    background-color: #4d4d62;
+}
+.playlist-song-info{
+    display: grid;
+    grid-template-columns: 65% 25% 10%;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 90%;
+    
+}
+.playlist-song-info span{
+    text-align: left;
+    font-family: 'Roboto Mono', sans-serif;
+}
+.playlist-song-title{
+    font-size: 16px;
+}
+.playlist-song-artist,
+.playlist-song-duration{
+    font-size: 10px;
+}
+.playlist-song-delete{
+    background-color: #4d4d62;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+.ri-close-fill{
+    color: white;
+    font-size: 16px;
+}
+.playlist-song-delete:hover{
+    background-color:rgb(201, 4, 4);
+}
+
+[aria-current="true"] {
+    background-color: #1b1b32;
+  }
+  
+
+#progress-container {
+    background: black;
+    width: 100%;
+    display: block;
+}
+.progress {
+    width: 1px;
+    height: 3px;
+    background: white;
+    margin-top: 20px;
+}

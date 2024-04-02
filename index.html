@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Learn Basic String and Array Methods by Building a Music Player App</title>
+</head>
+<body>
+    <div class="container-border">
+        <div class="main-container">
+            <div class="header">
+                <div class="line">
+                    <hr>
+                    <hr>
+                </div>
+                <div class="title-body">
+                    freeCodeCamp
+                </div>
+                <div class="line">
+                    <hr>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="player-container">
+                <div class="image-music">
+                    <img src="https://sun1-18.userapi.com/s/v1/ig2/GezxpTKkel11agEAg6FlHxQKbusTccrgzF--X2b8YJ1cO_wpZOXGcrDW1alxQ5Uo9UFqeRvMhO6Rgrz51TUe0M8x.jpg?size=1200x1200&quality=95&crop=0,0,1200,1200&ava=1" class="img-albom">
+                </div>
+                <div class="play-stop-container">
+                    <div class="player-display-song-artist">
+                        <p id="player-song-title">Камнем по голове</p>
+                        <p id="player-song-artist">Король и Шут</p>
+                      </div>
+                    <div class="player-button">
+                        <button id="previous" class="previous button-playing" aria-label="Previous">
+                            <i class="ri-skip-back-fill play"></i>
+                        </button>
+                        <button id="play" class="play button-playing" aria-label="Play">
+                            <i class="ri-play-fill play"></i>
+                        </button>
+                        <button id="pause" class="pause button-playing" aria-label="Pause">
+                            <i class="ri-pause-fill play"></i>
+                        </button>
+                        <button id="next" class="next button-playing" aria-label="Next">
+                            <i class="ri-skip-forward-fill play"></i>
+                        </button>
+                        <button id="shuffle" class="shuffle button-playing" aria-label="Shuffle">
+                            <i class="ri-shuffle-line play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container-border">
+            <div class="main-container">
+                <div class="header">
+                    <div class="line">
+                        <hr>
+                        <hr>
+                    </div>
+                    <div class="title-body">
+                        Playlist
+                    </div>
+                    <div class="line">
+                        <hr>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="list-container">
+                    <ul class="playlist-songs" id="playlist-songs">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
